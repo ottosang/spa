@@ -10,7 +10,7 @@
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif; }
         body { background-color: #030712; color: #f3f4f6; overflow-x: hidden; }
 
-        /* iokey.io 기반 프리미엄 다크 테크 스타일 */
+        /* DN TECH 프리미엄 다크 테크 스타일 */
         .page-container {
             position: relative; width: 100%; min-height: 100vh;
             background: linear-gradient(135deg, #020617 0%, #0f172a 50%, #1e1b4b 100%);
@@ -37,7 +37,7 @@
 
         .confidential-notice { font-size: 9.5pt; color: #475569; line-height: 1.8; border-top: 1px solid rgba(255, 255, 255, 0.06); padding-top: 30px; margin-top: 30px; word-break: keep-all; }
 
-        /* 정식 사업 보고서 포맷 스타일링 */
+        /* 정식 사업 계획 보고서 구조화 포맷 */
         #report-content { display: none; width: 100%; max-width: 1150px; margin: 50px auto; padding: 0 20px; }
         .report-paper { background: #ffffff; color: #1f2937; border-radius: 24px; padding: 80px 70px; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5); }
         
@@ -45,7 +45,6 @@
         .report-header h1 { font-size: 22pt; color: #0f172a; font-weight: 700; margin-bottom: 10px; }
         .report-header p { font-size: 10pt; color: #64748b; text-indent: 0; margin-bottom: 0; }
 
-        /* 목차 스타일 */
         .toc-box { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 35px; margin-bottom: 50px; }
         .toc-box h3 { font-size: 13pt; color: #0f172a; margin-bottom: 20px; border-bottom: 1px solid #cbd5e1; padding-bottom: 10px; }
         .toc-item { display: flex; justify-content: space-between; font-size: 11pt; color: #334155; margin-bottom: 12px; font-weight: 500; }
@@ -57,7 +56,7 @@
         
         p { font-size: 11pt; line-height: 2.2; color: #334155; margin-bottom: 25px; text-align: justify; word-break: keep-all; text-indent: 12px; }
         
-        /* 증빙 자료용 내부 레이아웃 */
+        /* 실증 증빙 자료 캡처 카드 포맷 */
         .evidence-media-box {
             background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 10px; padding: 25px; margin: 30px 0;
         }
@@ -68,14 +67,14 @@
             font-size: 12pt; font-weight: 700; color: #0f172a; margin-bottom: 12px; line-height: 1.4;
         }
         .evidence-media-box .media-content {
-            font-size: 10pt; color: #475569; line-height: 1.7; background: #ffffff; padding: 15px; border-left: 3px solid #94a3b8;
+            font-size: 10pt; color: #475569; line-height: 1.7; background: #ffffff; padding: 15px; border-left: 3px solid #cbd5e1;
         }
         .evidence-link {
             display: inline-block; margin-top: 10px; font-size: 9.5pt; color: #0284c7; text-decoration: none; font-weight: 500;
         }
         .evidence-link:hover { text-decoration: underline; }
 
-        /* 인포그래픽 데이터 시각화 구조 */
+        /* 인포그래픽 정밀 정렬 구조 */
         .quiet-graphic-container { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 14px; padding: 30px; margin: 35px 0; text-align: center; }
         .graphic-title { font-size: 11pt; font-weight: 700; color: #1e293b; margin-bottom: 25px; text-align: left; border-left: 3px solid #0f172a; padding-left: 10px; }
         
@@ -85,28 +84,6 @@
         .flow-node .node-desc { font-size: 9pt; color: #64748b; line-height: 1.5; }
         .flow-arrow { color: #94a3b8; font-weight: 700; font-size: 14pt; }
         @media(max-width: 768px) { .flow-wrapper { flex-direction: column; } .flow-arrow { display: none; } }
-
-        /* [변경 사항] 원색 배제 및 완벽한 수직 가로 정렬을 반영한 정밀 차트 시스템 */
-        .chart-align-container {
-            display: flex; justify-content: center; align-items: flex-end; gap: 40px; height: 200px; margin: 30px auto; max-width: 600px; padding-bottom: 10px; border-bottom: 2px solid #cbd5e1;
-        }
-        .chart-column-group {
-            display: flex; flex-direction: column; align-items: center; justify-content: flex-end; width: 140px; height: 100%;
-        }
-        /* Muted 차분한 파스텔 네이비/그레이/슬레이트 톤 적용 */
-        .chart-bar-green { width: 100%; height: 140px; background-color: #64748b; border-radius: 6px 6px 0 0; }
-        .chart-bar-red { width: 100%; height: 50px; background-color: #94a3b8; border-radius: 6px 6px 0 0; }
-        .chart-bar-blue { width: 100%; height: 165px; background-color: #334155; border-radius: 6px 6px 0 0; }
-        
-        .chart-label-container {
-            display: flex; justify-content: center; gap: 40px; max-width: 600px; margin: 0 auto 30px auto;
-        }
-        .chart-label {
-            width: 140px; text-align: center; font-size: 9.5pt; color: #475569; line-height: 1.5; font-weight: 500; padding-top: 10px;
-        }
-        .chart-label-target {
-            color: #1e293b; font-weight: 700;
-        }
 
         .highlight-box { background: #fff7ed; border-left: 5px solid #d97706; border-radius: 6px; padding: 30px; margin: 35px 0; }
         .highlight-box h4 { font-size: 12pt; color: #7c2d12; margin-bottom: 12px; font-weight: 700; }
@@ -118,11 +95,6 @@
         .analysis-card { background: #f8fafc; border: 1px solid #e2e8f0; padding: 25px; border-radius: 12px; }
         .analysis-card h5 { font-size: 12pt; color: #475569; margin-bottom: 12px; font-weight: 700; }
         .analysis-card p { font-size: 10pt; line-height: 1.8; color: #4b5563; margin-bottom: 0; text-indent: 0; }
-
-        .data-table { width: 100%; border-collapse: collapse; margin: 35px 0; font-size: 10pt; }
-        .data-table th { background: #f1f5f9; color: #1e293b; font-weight: 700; padding: 14px; border: 1px solid #cbd5e1; text-align: center; }
-        .data-table td { padding: 14px; border: 1px solid #e2e8f0; color: #334155; line-height: 1.6; }
-        .data-table tr:nth-child(even) { background: #f8fafc; }
     </style>
 </head>
 <body>
@@ -147,17 +119,16 @@
         </div>
     </div>
 
-    <!-- 2화면: 정식 사업 보고서 기획 양식 구조 본문 -->
+    <!-- 2화면: 정식 사업 보고서 양식 구조 본문 -->
     <div id="report-content">
         <div class="report-paper">
             
-            <!-- 표준 사업보고서 헤더 -->
             <div class="report-header">
                 <h1>제주 성산읍 온천 테라피 테마파크 도입 타당성 조사 보고서</h1>
                 <p>주식회사 디앤테크 (DN TECH) | 전략기획본부 인프라개발팀</p>
             </div>
 
-            <!-- 정식 목차 포맷 -->
+            <!-- 목차 포맷 -->
             <div class="toc-box">
                 <h3>[ 목 차 ]</h3>
                 <div class="toc-item"><span>1. 사업의 배경 및 목적</span></div>
@@ -166,11 +137,12 @@
                 <div class="toc-item"><span>2. 외부 개발 환경 분석 및 온천 유사 시설 실증 분석</span></div>
                 <div class="toc-sub-item"><span>2.1 제주 권역 기존 온천 인프라 가동 실태</span></div>
                 <div class="toc-sub-item"><span>2.2 성산읍 삼달리 참숯가마 구조적 격차 정밀 분석</span></div>
+                <div class="toc-sub-item"><span>2.3 서귀포 호근동 오레브(O'REVE) 스파 고급화 전략 분석 및 대조</span></div>
                 <div class="toc-item"><span>3. 입지 타당성 및 지리적 파생수요 분석</span></div>
                 <div class="toc-sub-item"><span>3.1 성산읍 권역 통과형 동선 구조 극복 핵심 앵커화</span></div>
                 <div class="toc-sub-item"><span>3.2 올레 1코스 및 트레킹 유입 프로세스 모델링</span></div>
-                <div class="toc-item"><span>4. 온천 및 마사지 수요 예측 및 유사 사례 경제성 검증</span></div>
-                <div class="toc-sub-item"><span>4.1 복합 스파 시설 객단가 마진 구조 추적</span></div>
+                <div class="toc-item"><span>4. 온천 및 마사지 수요 예측 및 대중화 전략 경제성 검증</span></div>
+                <div class="toc-sub-item"><span>4.1 서남권-동부권 타깃팅 분리를 통한 경제성 도출</span></div>
                 <div class="toc-sub-item"><span>4.2 타깃 고객 행동 데이터 기반 사업 타당성 결론</span></div>
             </div>
 
@@ -220,98 +192,40 @@
             <div class="section-title">2. 외부 개발 환경 분석 및 온천 유사 시설 실증 분석</div>
             
             <div class="subsection-title">2.1 제주 권역 기존 온천 인프라 가동 실태</div>
-            <p>본 장에서는 제주 권역 내에서 현재 운영 중인 기존 온천 개발 사례와 유사 업종인 대형 찜질 인프라의 성공 요인 및 한계점을 객관적 지표를 통해 분석함으로써, 성산읍 테마파크가 확보할 수 있는 독점적 포지셔닝을 실증합니다. 현재 제주도 내 온천 인프라의 대표 주자인 서남권(안덕면)의 산방산 탄산온천은 독보적인 고농도 탄산 수질과 노천탕 인프라를 바탕으로 제주 서남부의 필수 거점 역할을 수행해 왔습니다. 사계절 내내 꾸준한 집객력을 유지하며 야간 관광 명소로서의 입지도 확고히 하였으나, 개발된 지 오랜 세월이 흐르며 하드웨어 노후화가 진행되었고 단조로운 대중탕 위주의 공간 구성으로 고부가가치 케어 수요층을 흡수하기에는 명확한 한계점을 노출하고 있습니다. 또한, 제주 동부권 관광 벨트(성산·구좌·우도)와의 심각한 지리적 이격으로 인해 동부 권역의 방대한 유동 인구를 흡수하지 못하는 권역별 인프라 단절 현상이 지속되고 있습니다.</p>
-
-            <div class="evidence-media-box">
-                <div class="media-header"><span>[증빙자료 2-1] 기존 권역 시설 교차 실증 리포트</span><span>출처: 제주도내 수질 분석 및 개발 환경 백서 인용</span></div>
-                <div class="media-title">"제주 동부권 온천 자원 개발 공백과 권역별 이용 격차 불균형 극심"</div>
-                <div class="media-content">
-                    서귀포 안덕면에 집중된 기존 온천 시설은 연간 이용객 포화 상태 및 시설 노후화율이 증가하고 있으나, 동부 성산권역은 성산일출봉 등 메가 브랜드 대비 대형 온천수 입욕 시설 공급률이 0%를 기록함. 이는 지리적 유출을 고착화시키는 주원인임.
-                </div>
-            </div>
+            <p>본 장에서는 제주 권역 내에서 현재 운영 중인 기존 온천 개발 사례와 유사 업종인 대형 찜질 인프라의 성공 요인 및 한계점을 객관적 지표를 통해 분석함으로써, 성산읍 테마파크가 확보할 수 있는 독점적 포지셔닝을 실증합니다. 현재 제주도 내 온천 인프라의 대표 주자인 서남권(안덕면)의 산방산 탄산온천은 독보적인 고농도 탄산 수질과 노천탕 인프라를 바탕으로 제주 서남부의 필수 거점 역할을 수행해  있습니다. 사계절 내내 꾸준한 집객력을 유지하며 야간 관광 명소로서의 입지도 확고히 하였으나, 개발된 지 오랜 세월이 흐르며 하드웨어 노후화가 진행되었고 단조로운 대중탕 위주의 공간 구성으로 고부가가치 케어 수요층을 흡수하기에는 명확한 한계점을 노출하고 있습니다. 또한, 제주 동부권 관광 벨트(성산·구좌·우도)와의 심각한 지리적 이격으로 인해 동부 권역의 방대한 유동 인구를 흡수하지 못하는 권역별 인프라 단절 현상이 지속되고 있습니다.</p>
 
             <div class="subsection-title">2.2 성산읍 삼달리 참숯가마 구조적 격차 정밀 분석</div>
-            <p>프로젝트 예정지와 인접한 성산읍 삼달리에 위치한 전통 참숯가마 찜질방은 제주 동부권의 대표적인 로컬 치유 시설로 오랜 기간 자리잡아 왔습니다. 참숯 가마 고유의 원적외선 효과와 친환경 한증막 시스템을 무기로 높은 로컬 재방문율을 기록하고 있으며, '비 오는 날의 제주 필수 코스' 등의 키워드로 포지셔닝되어 성공적인 브랜딩을 안착시켰습니다. 24시간 연중무휴 체제와 저렴한 입장료를 결합하여 동부 권역 수요의 한 축을 담당해 온 훌륭한 비즈니스 모델입니다.</p>
+            <p>프로젝트 예정지와 인접한 성산읍 삼달리에 위치한 전통 참숯가마 찜질방은 제주 동부권의 대표적인 로컬 치유 시설로 오랜 기간 자리잡아 왔습니다. 참숯 가마 고유의 원적외선 효과와 친환경 한증막 시스템을 무기로 높은 로컬 재방문율을 기록하고 있으며, '비 오는 날의 제주 필수 코스' 등의 키워드로 포지셔닝되어 성공적인 브랜딩을 안착시켰습니다. 24시간 연중무휴 체제와 저렴한 입장료를 결합하여 동부 권역 수요의 한 축을 담당해 온 훌륭한 비즈니스 모델입니다. 다만 전통 가마 중심의 열치유 효능은 탁월하지만 대형 목욕탕 및 온천 온탕 시설이 전무하며, 오직 간단히 땀만 씻어낼 수 있는 입식 샤워 전 전용 공간만 운영한다는 치명적인 구조적 한계를 안고 있습니다.</p>
 
-            <div class="highlight-box">
-                <h4> 삼달리 참숯가마의 물리적 하드웨어 격차와 시장 기회</h4>
-                <p>삼달리 시설은 전통 가마 중심의 열치유 효능은 탁월하지만, <strong>'대형 목욕탕 및 온천 온탕 시설이 전무하며, 오직 간단히 땀만 씻어낼 수 있는 입식 샤워 전용 공간만 운영'</strong>한다는 치명적인 구조적 한계를 안고 있습니다. 이는 한증막 투어 이후 따뜻한 온천수에 몸을 온전히 담그고 수중 이완 및 전문 스파 테라피를 연계해 즐기고자 하는 고부가가치 힐링 관광객들의 핵심 니즈를 충족시키지 못하는 거대한 격차 시장을 형성하고 있습니다.</p>
-            </div>
+            <div class="subsection-title">2.3 서귀포 호근동 오레브(O'REVE) 스파 고급화 전략 분석 및 대조</div>
+            <p>제주 남부 권역인 서귀포시 호근동에 입지한 '오레브 핫스프링 앤 스파(O'REVE)'는 지하 2,003m 심층 온천 자원과 행정안전부의 국민보양온천 승인을 기반으로 운영되는 제주 내 대표적인 하이엔드형 스파 시설입니다. 오레브 스파는 글로벌 명품 브랜드 호텔인 JW 메리어트 제주와 인접 연계하여, 종합 아쿠아 스파 이용권을 정상가 100,000원으로 책정하는 등 고소득층 및 하이엔드 호캉스 족들을 주 타깃으로 삼는 '폐쇄형 프리미엄 고급화 전략'을 전개하고 있습니다. 대형 인도어 풀, 프리미엄 썬베드 및 발레 정산 시스템 등을 구비하여 프리미엄 웰빙 공간을 구현했으나, 일반 대중 관광객이나 올레길 트레커들이 당일 여정 중 부담 없이 진입하기에는 지나치게 높은 가격 장벽과 격식의 한계를 가지고 있습니다.</p>
             
-            <p>따라서 성산읍 중심부에 새롭게 도입될 온천 테라피 테마파크는 삼달리 참숯가마의 열치유 모델을 보완·확장하여, '풍부한 용출량의 천연 온천 수중 입욕 시설'과 '전문 마사지 프로그램'을 원스톱으로 레이어링해야 합니다. 이는 기존 시설과의 소모적 경쟁을 피하고, 동부권 유일의 하이엔드 수중 힐링 메카로 시장을 완벽하게 독점할 수 있는 명확한 근거가 됩니다.</p>
+            <div class="evidence-media-box">
+                <div class="media-header"><span>[증빙자료 2-2] 남부 고급화 스파 시설 포지셔닝 분석</span><span>출처: 오레브 핫스프링 앤 스파 공식 프라이스 가이드 정보 참고</span></div>
+                <div class="media-title">"오레브 핫스프링 앤 스파, 프리미엄 아쿠아 스파 라인업 구축으로 럭셔리 휴양 시장 타깃팅"</div>
+                <div class="media-content">
+                    오레브(O'REVE)의 이용 요금 체계는 대욕장 및 찜질 중심의 사우나 스파가 40,000원, 전 시설을 이용하는 종합 아쿠아 스파가 100,000원으로 고가 포지셔닝이 명확함. 이는 프리미엄 세그먼트에는 유효하나, 일일 유동객이 많은 동부권 대중 관광 시장의 리커버리 수요를 흡수하기에는 다소 괴리가 있음.
+                </div>
+                <a href="http://www.orevespa.co.kr/" target="_blank" class="evidence-link">➔ 오레브 스파 공식 시스템 운영 요금 체계 확인</a>
+            </div>
 
-            <table class="data-table">
-                <thead>
-                    <tr>
-                        <th>구분</th>
-                        <th>산방산 탄산온천 (서남권)</th>
-                        <th>삼달리 참숯가마 (동부 외곽)</th>
-                        <th>성산읍 온천 테마파크 (도입 기획안)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>핵심 하드웨어</strong></td>
-                        <td>탄산수 대중 목욕탕 및 노천탕</td>
-                        <td>전통 재래식 참숯가마 한증막</td>
-                        <td>천연 온천 대탕 + 노천 테라피 풀 + 전용 스파 존</td>
-                    </tr>
-                    <tr>
-                        <td><strong>물리적 한계</strong></td>
-                        <td>시설 노후화 및 동부권 접근성 취약</td>
-                        <td><strong>입식 샤워 전용 (탕 시설 전무)</strong></td>
-                        <td>신축 최첨단 시스템 및 올레길 코어 입지</td>
-                    </tr>
-                    <tr>
-                        <td><strong>연계 프로그램</strong></td>
-                        <td>단조로운 입욕 위주 구성</td>
-                        <td>휴식실 및 기초 식음료</td>
-                        <td>개인 맞춤형 수중 이완 스파 및 전문 마사지</td>
-                    </tr>
-                </tbody>
-            </table>
+            <p>반면, 본 주식회사 디앤테크(DN TECH)가 제주 성산읍에 도입하고자 하는 온천 테라피 테마파크는 오레브의 폐쇄적 고급화 모델을 정면으로 우회하는 **'철저한 실속형 대중화 온천 스파 모델'**을 지향합니다. 인근 성산일출봉과 우도, 올레 1코스에서 쏟아지는 대규모 대중 유동 인구가 아무런 장벽 없이 일상적으로 유입될 수 있도록 접근성이 높은 가격 정책과 직관적인 One-Key 무인 제어 인프라를 도입하여 객장 가동률과 유입량의 극대화를 달성하는 상반된 전략적 기조를 취합니다.</p>
 
             <!-- 제3장 -->
-            <div class="section-block">
-                <h2>3. 입지 타당성 및 지리적 파생수요 분석</h2>
-                
-                <div class="subsection-title">3.1 성산읍 권역 통과형 동선 구조 극복 핵심 앵커화</div>
-                <p>성산읍 권역은 성산일출봉, 우도 입항 선착장, 섭지코지, 빛의 벙커 등 연간 수백만 명 이상의 순수 관광 유동 인구가 집중되는 제주 최고의 핵심 관광 거점입니다. 하지만 수많은 인구 밀집에도 불구하고 야간에 관광객들을 잔류시킬 수 있는 킬러 콘텐츠가 절대적으로 부족하여, 대다수의 관광객이 주간 경관 소비 후 타 지역(제주시내 및 중문 권역)으로 이동하여 투숙하는 고질적인 '통과형 관광지' 특성을 보이고 있습니다. 이는 지역 내 중저가 숙박시설 및 소상공인 상권의 경제적 활성화를 저해하는 핵심 요인으로 지목되어 왔습니다. 본 프로젝트는 성산읍이 가진 지리적 특성과 지형적 소비 구조를 완벽히 역이용하여 주간 유동 인구를 야간 투숙 수요로 전환하는 핵심 앵커(Anchor) 역할을 가집니다.</p>
+            <div class="section-title">3. 입지 타당성 및 지리적 파생수요 분석</div>
+            
+            <div class="subsection-title">3.1 성산읍 권역 통과형 동선 구조 극복 핵심 앵커화</div>
+            <p>성산읍 권역은 성산일출봉, 우도 입항 선착장, 섭지코지, 빛의 벙커 등 연간 수백만 명 이상의 순수 관광 유동 인구가 집중되는 제주 최고의 핵심 관광 거점입니다. 하지만 수많은 인구 밀집에도 불구하고 야간에 관광객들을 잔류시킬 수 있는 킬러 콘텐츠가 절대적으로 부족하여, 대다수의 관광객이 주간 경관 소비 후 타 지역(제주시내 및 중문 권역)으로 이동하여 투숙하는 고질적인 '통과형 관광지' 특성을 보이고 있습니다. 이는 지역 내 중저가 숙박시설 및 소상공인 상권의 경제적 활성화를 저해하는 핵심 요인으로 지목되어 왔습니다. 본 프로젝트는 성산읍이 가진 지리적 특성과 지형적 소비 구조를 완벽히 역이용하여 주간 유동 인구를 야간 투숙 수요로 전환하는 핵심 앵커(Anchor) 역할을 가집니다.</p>
 
-                <!-- [변경 사항 반영] 원색 전면 배제 및 텍스트 라벨과 100% 수직 일치된 프리미엄 바 차트 인프라 -->
-                <div class="quiet-graphic-container">
-                    <div class="graphic-title">성산읍 권역 주야간 시간대별 유동인구 이탈 현황 및 인프라 구축 후 시뮬레이션</div>
-                    
-                    <div class="chart-align-container">
-                        <div class="chart-column-group">
-                            <div class="chart-bar-green"></div>
-                        </div>
-                        <div class="chart-column-group">
-                            <div class="chart-bar-red"></div>
-                        </div>
-                        <div class="chart-column-group">
-                            <div class="chart-bar-blue"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="chart-label-container">
-                        <div class="chart-label">주간 집객<br>(10-15시)</div>
-                        <div class="chart-label">야간 체류<br>(19-23시)</div>
-                        <div class="chart-label chart-label-target">본 시설 도입 후<br>목표치</div>
-                    </div>
-                </div>
-
-                <div class="subsection-title">3.2 올레 1코스 및 트레킹 유입 프로세스 모델링</div>
-                <p>특히 제주 올레길의 가장 상징적인 코스이자 시작점인 '올레 1코스'의 시·종점이 성산 구역에 맞물려 있다는 점에 주목해야 합니다. 하루 평균 수천 명에 육박하는 고강도 트레킹 도보 여행객들은 보행 일정이 마감되는 오후 4시부터 8시 사이에 극심한 육체적 근육 피로와 하지 정맥 부담을 겪게 되며, 이 시점과 성산읍 중심부 온천의 입지 동선이 결합할 때 자연스러운 인바운드 유입 프로세스가 완성됩니다. 1코스 종주 완료 직후 축적된 하지 피로를 즉각적으로 해소할 수 있는 '온천수 스파 및 전문 발 테라피 동선'을 결합함으로써 야간 시간대 올레족들의 발을 성산읍 내에 묶어두고 타 지역으로의 유출을 전면 차단합니다.</p>
-                <p>더불어, 성산읍 권역에는 훌륭한 컨디션을 지녔음에도 야간 집객 앵커의 부재로 인해 공실률을 겪고 있는 합리적 가격대의 중중저가 숙소 및 펜션 인프라가 촘촘히 구축되어 있습니다. 본 온천 테라피 테마파크는 이들 가성비 숙소 생태계의 거대한 '공용 하이엔드 부대시설' 역할을 자처함으로써, 성산읍 전역의 투숙률을 동반 견인하고 체류형 관광지로서의 패러다임을 확립하는 지역 경제의 심장 역할을 수행할 것입니다.</p>
-            </div>
-
+            <div class="subsection-title">3.2 올레 1코스 및 트레킹 유입 프로세스 모델링</div>
+            <p>특히 제주 올레길의 가장 상징적인 코스이자 시작점인 '올레 1코스'의 시·종점이 성산 구역에 맞물려 있다는 점에 주목해야 합니다. 하루 평균 수천 명에 육박하는 고강도 트레킹 도보 여행객들은 보행 일정이 마감되는 오후 4시부터 8시 사이에 극심한 육체적 근육 피로와 하지 정맥 부담을 겪게 되며, 이 시점과 성산읍 중심부 온천의 입지 동선이 결합할 때 자연스러운 인바운드 유입 프로세스가 완성됩니다. 1코스 종주 완료 직후 축적된 하지 피로를 즉각적으로 해소할 수 있는 '온천수 스파 및 전문 발 테라피 동선'을 결합함으로써 야간 시간대 올레족들의 발을 성산읍 내에 묶어두고 타 지역으로의 유출을 전면 차단합니다.</p>
+            <p>더불어, 성산읍 권역에는 훌륭한 컨디션을 지녔음에도 야간 집객 앵커의 부재로 인해 공실률을 겪고 있는 합리적 가격대의 중중저가 숙소 및 펜션 인프라가 촘촘히 구축되어 있습니다. 본 온천 테라피 테마파크는 이들 가성비 숙소 생태계의 거대한 '공용 하이엔드 부대시설' 역할을 자처함으로써, 성산읍 전역의 투숙률을 동반 견인하고 체류형 관광지로서의 패러다임을 확립하는 지역 경제의 심장 역할을 수행할 것입니다.</p>
+            
             <!-- 제4장 -->
-            <div class="section-block">
-                <h2>4. 온천 및 마사지 수요 예측 및 유사 사례 경제성 검증</h2>
-                
-                <div class="subsection-title">4.1 복합 스파 시설 객단가 마진 구조 추적</div>
-                <p>본 장에서는 국내외 스파 테라피 및 마사지 시설을 융합한 휴양 단지들의 이용객 데이터와 매출 구조 사례를 정밀 추적하여, 성산읍 온천 테마파크 도입 시 예상되는 실제 수요와 경제적 타당성을 수치적으로 검증합니다. 통계 지표에 따르면, 단순 입욕 중심의 일반 목욕 인프라 대비 전문 스파 프로그램(마사지, 수중 이완 코스)을 결합한 복합 시설의 객단가는 최소 2.8배에서 최대 4.2배까지 높게 형성되는 것으로 나타났습니다. 특히 충청권 및 수도권의 대형 스파 리조트 사례를 분석한 결과, 전체 입장객의 약 34.5%가 인당 8만 원 이상의 고부가가치 마사지 및 테라피 옵션 프로그램을 추가 선택하는 소비 성향을 보였습니다. 이는 트레킹 관광객 비중이 압도적인 제주 동부 권역에서 더욱 가파른 우상향 곡선을 그릴 것으로 예측됩니다.</p>
+            <div class="section-title">4. 온천 및 마사지 수요 예측 및 대중화 전략 경제성 검증</div>
+            
+            <div class="subsection-title">4.1 서남권-동부권 타깃팅 분리를 통한 경제성 도출</div>
+            <p>본 장에서는 국내외 스파 테라피 및 마사지 시설을 융합한 휴양 단지들의 이용객 데이터와 매출 구조 사례를 정밀 추적하여, 성산읍 온천 테마파크 도입 시 예상되는 실제 수요와 경제적 타당성을 수치적으로 검증합니다. 통계 지표에 따르면, 단순 입욕 중심의 일반 목욕 인프라 대비 전문 스파 프로그램(마사지, 수중 이완 코스)을 결합한 복합 시설의 객단가는 최소 2.8배에서 최대 4.2배까지 높게 형성되는 것으로 나타났습니다. 호근동 오레브 스파가 고소득 멤버십과 하이엔드 리조트 기반 프리미엄 시장을 점유하고 있다면, 당 프로젝트는 일인당 객단가 진입 장벽을 과감히 파괴하고 회전율을 중심 축으로 세우는 대중화 스파 모델을 전개하여 제주 동부권 전체 카테고리 소비를 흡수하는 안정적 마진 구조를 실현합니다.</p>
 
             <div class="evidence-media-box">
                 <div class="media-header"><span>[증빙자료 4-1] 유사 업종 가동률 및 수요 지표</span><span>출처: 한국은행 제주본부 지역경제 동향 보고서 가공</span></div>
@@ -321,11 +235,9 @@
                 </div>
             </div>
 
-                <div class="subsection-title">4.2 타깃 고객 행동 데이터 기반 사업 타당성 결론</div>
-                <p>성산 권역의 연간 방문객 수와 개별 관광객(FIT)의 리커버리 인프라 지출 평균 비용을 시뮬레이션 한 결과, 성산 온천 테마파크 개장 초기 연도 일평균 입욕 객수는 약 1,200명 선으로 추산되며, 이 중 약 400명 이상이 전문 마사지 및 수중 테라피 세션을 이용할 것으로 예측됩니다. 이는 단순 목욕업 형태의 운영을 탈피하여, 고수익 복합 플랫폼으로서 안정적이고 고도화된 매출 체계를 형성하는 결정적 기반이 될 것입니다.</p>
-                <p>종합컨대, 본 '제주 성산읍 온천 테라피 테마파크'는 현대 관광 트렌드인 실속형 여정 요구를 완벽히 관통하며, 주변 가성비 숙소들과의 상생 생태계를 구축하는 거대한 허브가 될 것입니다. 기존의 단순 샤워 시설 위주의 참숯가마나 서남권에 치우친 탄산온천과의 확실한 차별화를 이룬 본 프로젝트는, 제주 동부 권역을 스쳐 지나가는 관광지에서 '사계절 내내 머무르는 야간 체류형 명소'로 전면 탈바꿈시키는 독보적인 전략적 자산이 될 것임을 실증 데이터를 기반으로 확신합니다.</p>
-            </div>
-
+            <div class="subsection-title">4.2 타깃 고객 행동 데이터 기반 사업 타당성 결론</div>
+            <p>성산 권역의 연간 방문객 수와 개별 관광객(FIT)의 리커버리 인프라 지출 평균 비용을 시뮬레이션 한 결과, 성산 온천 테마파크 개장 초기 연도 일평균 입욕 객수는 약 1,200명 선으로 추산되며, 이 중 약 400명 이상이 전문 마사지 및 수중 테라피 세션을 이용할 것으로 예측됩니다. 이는 단순 목욕업 형태의 운영을 탈피하여, 고수익 복합 플랫폼으로서 안정적이고 고도화된 매출 체계를 형성하는 결정적 기반이 될 것입니다.</p>
+            <p>종합컨대, 본 '제주 성산읍 온천 테라피 테마파크'는 현대 관광 트렌드인 실속형 여정 요구를 완벽히 관통하며, 주변 가성비 숙소들과의 상생 생태계를 구축하는 거대한 허브가 될 것입니다. 오레브 스파와 같은 고비용 격식 위주의 모델과는 차별화된, 대중 지향적이고 실용적인 리커버리 인프라를 구축함으로써 제주 동부 권역을 스쳐 지나가는 관광지에서 '사계절 내내 머무르는 야간 체류형 명소'로 전면 탈바꿈시키는 독보적인 전략적 자산이 될 것임을 실증 데이터를 기반으로 확신합니다.</p>
         </div>
     </div>
 
